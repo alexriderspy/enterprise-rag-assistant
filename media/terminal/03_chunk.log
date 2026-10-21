@@ -1,0 +1,3 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python -m rag.chunk
+fixed      345 chunks   median 1000 chars   max  1000
+sections   441 chunks   median  774 chars   max  1619

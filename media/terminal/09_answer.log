@@ -1,0 +1,13 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python -m rag.answer How many paid sick days do I get?
+W1021 06:52:51.135000 46389 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Q: How many paid sick days do I get?
+
+Each GitLab team member may use up to 25 paid sick days, available from their first day of work. [S1]
+
+ *[S1] Time Off Types > Sick Time > Sick Time Eligibility and Coverage
+  [S2] Time Off Types > Sick Time > Pay While on Sick Leave of Absence
+  [S3] Time Off Types > Caregiver Sick Time > Pay While on Caregiver Sick Lea
+  [S4] Time Off Types > Caregiver Sick Time > Caregiver Sick Time Eligibility
+  [S5] Time Off Types > Sick Time > For Sick Absences 1-5 Consecutive Days
+
+5.5s, 1131 prompt tokens

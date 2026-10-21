@@ -1,0 +1,23 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % sed -n '3p;47p' evals/questions.jsonl | python -m json.tool --json-lines
+{
+    "id": "q03",
+    "question": "My country has 12 public holidays a year and I joined with 183 days left in the year. How many public holidays do I get this year?",
+    "answer": "It is pro-rated: (183 / 365) x 12 = 6.02, rounded to 6 days.",
+    "gold": [
+        "time-off-types#frequently-asked-public-holiday-questions"
+    ],
+    "facts": [
+        [
+            "6"
+        ]
+    ],
+    "answerable": true
+}
+{
+    "id": "u01",
+    "question": "What is the company's 401(k) match?",
+    "answer": "Not covered by these handbook pages.",
+    "gold": [],
+    "facts": [],
+    "answerable": false
+}

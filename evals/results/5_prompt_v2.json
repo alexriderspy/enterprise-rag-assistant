@@ -1,0 +1,1113 @@
+{
+  "config": "5_prompt_v2",
+  "chunking": "sections",
+  "mode": "rerank",
+  "prompt": "v2",
+  "summary": {
+    "hit@1": 0.8478260869565217,
+    "hit@5": 0.9782608695652174,
+    "mrr@10": 0.9027777777777778,
+    "answer_correct": 0.8478260869565217,
+    "facts_exact": 0.9459459459459459,
+    "citation_correct": 0.9333333333333333,
+    "idk_when_unanswerable": 1.0,
+    "idk_when_answerable": 0.021739130434782608,
+    "overall_accuracy": 0.8703703703703703,
+    "avg_seconds": 7.779444444444444
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "question": "Is there a maximum number of vacation days I can take in a year?",
+      "answerable": true,
+      "retrieved": [
+        "Relocation > Relocation / Address Change > Short-Term Stay Definition",
+        "Relocation > Relocation / Address Change > Importance of Communicating Location",
+        "Time Off Types > Public Holiday > Frequently Asked Public Holiday Questions",
+        "Time Off Types > Flexible Paid Time Off (PTO) > Overview",
+        "Relocation > Relocation / Address Change > Digital Nomads"
+      ],
+      "rank": 4,
+      "answer": "According to the handbook, there is no specific limit on the amount of PTO a team member can take per year, but for time off exceeding 25 consecutive calendar days, special permission is required. [S4]",
+      "refused": false,
+      "seconds": 5.7,
+      "prompt_tokens": 1307,
+      "correct": true,
+      "judge_reason": "The assistant answer accurately conveys the key facts about the absence limit and the requirement for special permission for extended leave.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q02",
+      "question": "I want to take 4 days off next month. How much notice does my manager need?",
+      "answerable": true,
+      "retrieved": [
+        "Time Off Types > Flexible Paid Time Off (PTO) > PTO Protocols (Planning and Coordination)",
+        "Time Off Types > Volunteer > Request Process",
+        "Time Off Types > Bereavement > Request Process",
+        "Time Off Types > GitLab Legal Civic Obligations Policy > Request Process",
+        "Leave Types > Emergency Leave > How to Request"
+      ],
+      "rank": 1,
+      "answer": "You should provide at least twice as many days' notice as your planned time off, which in this case would be at least 8 business days. [S1]",
+      "refused": false,
+      "seconds": 14.07,
+      "prompt_tokens": 1159,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key information as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q03",
+      "question": "My country has 12 public holidays a year and I joined with 183 days left in the year. How many public holidays do I get this year?",
+      "answerable": true,
+      "retrieved": [
+        "Time Off Types > Public Holiday > Frequently Asked Public Holiday Questions",
+        "Time Off Types > Public Holiday > Overview",
+        "Time Off Types > Public Holiday > General List of Public Holidays",
+        "Relocation > Relocation / Address Change > Importance of Communicating Location",
+        "Relocation > Relocation / Address Change > Short-Term Stay Definition"
+      ],
+      "rank": 1,
+      "answer": "Based on the information provided, your public holiday balance would be calculated as follows: (Days remaining in the calendar year \u00f7 365) \u00d7 Full-year public holiday entitlement. Given your country's full-year entitlement is 12 days and you joined with 183 days remaining in the year, your balance would be 12 \u00d7 (183 \u00f7 365) = 6.07 days, which would be rounded down to 6 days. [S1]",
+      "refused": false,
+      "seconds": 7.68,
+      "prompt_tokens": 1193,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same calculation and result as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q04",
+      "question": "Can I carry my unused public holidays over to next year?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Equipment > Existing Team Members- 500 USD (or equivalent local currency) Refresh Guidelines",
+        "Time Off Types > Public Holiday > Frequently Asked Public Holiday Questions",
+        "Time Off Types > Public Holiday > Overview",
+        "Leave Types > GitLab Parental Leave > Eligibility, Entitlement and Planning Your Leave",
+        "Time Off Types > Public Holiday > General List of Public Holidays"
+      ],
+      "rank": 3,
+      "answer": "No, any unused funds from the yearly refresh will not roll over to the next year [S1]. Similarly, unused public holiday balances will not rollover to the following calendar year [S3].",
+      "refused": false,
+      "seconds": 7.06,
+      "prompt_tokens": 1309,
+      "correct": true,
+      "judge_reason": "The assistant answer accurately states that unused public holiday balances do not roll over to the next year, matching the reference answer.",
+      "facts_ok": null,
+      "cited_gold": true
+    },
+    {
+      "id": "q05",
+      "question": "How many paid sick days do I get?",
+      "answerable": true,
+      "retrieved": [
+        "Time Off Types > Sick Time > Sick Time Eligibility and Coverage",
+        "Time Off Types > Sick Time > Pay While on Sick Leave of Absence",
+        "Time Off Types > Caregiver Sick Time > Pay While on Caregiver Sick Leave of Absence",
+        "Time Off Types > Caregiver Sick Time > Caregiver Sick Time Eligibility and Coverage",
+        "Time Off Types > Sick Time > For Sick Absences 1-5 Consecutive Days"
+      ],
+      "rank": 1,
+      "answer": "Each GitLab team member may use up to 25 paid sick days, available from their first day of work. [S1]",
+      "refused": false,
+      "seconds": 5.96,
+      "prompt_tokens": 1131,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact about the number of paid sick days and aligns with the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q06",
+      "question": "I was out sick for 3 days. Do I need to send a doctor's note?",
+      "answerable": true,
+      "retrieved": [
+        "Time Off Types > Sick Time > For Sick Absences 1-5 Consecutive Days",
+        "Time Off Types > Sick Time > For Sick Absences that Exceed 6+ Consecutive Days",
+        "Time Off Types > Caregiver Sick Time > For Caregiver Sick Absences 6+ Consecutive Days",
+        "Time Off Types > Caregiver Sick Time > For Caregiver Sick Absences 1-5 Consecutive Days",
+        "Leave Types > Sick Leave"
+      ],
+      "rank": 1,
+      "answer": "Based on your absence being 3 days, you do not need to provide a doctor's note [S1]. Your sick time will automatically update in Time Off by Deel [S1].",
+      "refused": false,
+      "seconds": 9.55,
+      "prompt_tokens": 929,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the correct information about not needing a doctor's note for absences of less than 6 days, which aligns with the reference answer.",
+      "facts_ok": null,
+      "cited_gold": true
+    },
+    {
+      "id": "q07",
+      "question": "My grandmother is ill and I need to look after her. Is there paid leave for that?",
+      "answerable": true,
+      "retrieved": [
+        "Leave Types > GitLab Parental Leave > Supplement with Paid Time Off",
+        "Time Off Types > Caregiver Sick Time > Overview",
+        "Leave Types > GitLab Parental Leave",
+        "Time Off Types > Sick Time > Overview",
+        "Time Off Types > GitLab Legal Civic Obligations Policy > Coordination with other Leaves"
+      ],
+      "rank": 2,
+      "answer": "Based on the handbook, GitLab does not provide paid caregiver sick time. You may consider using Flexible Paid Time Off with manager coordination, but this is not an extension of paid parental leave. [S1] [S2]",
+      "refused": false,
+      "seconds": 6.41,
+      "prompt_tokens": 726,
+      "correct": false,
+      "judge_reason": "The assistant answer does not provide the key fact about caregiver sick time being available with a specific number of days.",
+      "facts_ok": null,
+      "cited_gold": true
+    },
+    {
+      "id": "q08",
+      "question": "Do I have to provide proof of a death to take bereavement leave?",
+      "answerable": true,
+      "retrieved": [
+        "Time Off Types > Bereavement > Overview",
+        "Time Off Types > Bereavement > Request Process",
+        "Time Off Types > Bereavement",
+        "Time Off Types > Bereavement > Leave Extensions",
+        "Time Off Types > Bereavement > Coordination with Other Leaves"
+      ],
+      "rank": 2,
+      "answer": "No documentation or proof of loss is required to access bereavement leave at GitLab, unless local or statutory law requires it [S2].",
+      "refused": false,
+      "seconds": 5.22,
+      "prompt_tokens": 778,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key information as the reference answer without any contradictions.",
+      "facts_ok": null,
+      "cited_gold": true
+    },
+    {
+      "id": "q09",
+      "question": "Am I paid while I'm on jury duty?",
+      "answerable": true,
+      "retrieved": [
+        "Time Off Types > GitLab Legal Civic Obligations Policy > Pay while on Jury Duty",
+        "Time Off Types > GitLab Legal Civic Obligations Policy > Request Process",
+        "Leave Types > GitLab Parental Leave > Pay While on Parental Leave",
+        "Time Off Types > Sick Time > Pay While on Sick Leave of Absence",
+        "Time Off Types > Caregiver Sick Time > Pay While on Caregiver Sick Leave of Absence"
+      ],
+      "rank": 1,
+      "answer": "Yes, you will be paid while on jury duty. Eligible team members will receive 100% of their weekly wages through paid leave unless the absence for civil legal proceedings exceeds 25 working days. [S1]",
+      "refused": false,
+      "seconds": 7.69,
+      "prompt_tokens": 1182,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key facts as the reference answer, including the 100% weekly wage payment and the 25 working days threshold.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q10",
+      "question": "How long is paid parental leave?",
+      "answerable": true,
+      "retrieved": [
+        "Leave Types > GitLab Parental Leave",
+        "Leave Types > GitLab Parental Leave > Eligibility, Entitlement and Planning Your Leave",
+        "Leave Types > GitLab Parental Leave > How to Initiate Your Leave",
+        "Leave of Absence Toolkit for Team Members and Managers > General Guidelines For Managers on Resource Allocation",
+        "Leave Types > GitLab Parental Leave > Eligibility, Entitlement and Planning Your Leave"
+      ],
+      "rank": 1,
+      "answer": "GitLab provides 16 weeks of paid Parental Leave. [S2]",
+      "refused": false,
+      "seconds": 4.72,
+      "prompt_tokens": 1130,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q11",
+      "question": "Can I ease back into work at reduced hours after parental leave?",
+      "answerable": true,
+      "retrieved": [
+        "Leave Types > GitLab Parental Leave > Returning to Work at 50% Capacity",
+        "Leave Types > GitLab Parental Leave > Returning to Work",
+        "Leave Types > GitLab Parental Leave > Supplement with Paid Time Off",
+        "Leave of Absence Toolkit for Team Members and Managers > Team Member Toolkit > Pre-Leave",
+        "Leave of Absence Toolkit for Team Members and Managers > General Guidelines For Managers on Resource Allocation"
+      ],
+      "rank": 1,
+      "answer": "Yes, you can ease back into work at reduced hours after parental leave. GitLab offers the option to return at 50% capacity for a standard guideline of two to four weeks, though this can be adjusted based on individual needs. [S1]",
+      "refused": false,
+      "seconds": 6.26,
+      "prompt_tokens": 1151,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key facts as the reference answer and does not contradict it.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q12",
+      "question": "What happens to my stock vesting if I'm on leave for eight months?",
+      "answerable": true,
+      "retrieved": [
+        "Leave Types > Equity Vesting During Leave",
+        "Leave Types > Military Leave > For leaves greater than 31 days",
+        "Leave of Absence Toolkit for Team Members and Managers > General Guidelines For Managers on Resource Allocation",
+        "Leave Types > GitLab Parental Leave > Eligibility, Entitlement and Planning Your Leave",
+        "Time Off Types > Sick Time > Pay While on Sick Leave of Absence"
+      ],
+      "rank": 1,
+      "answer": "Stock vesting is paused after six months of continuous leave and resumes on your first day back at work [S1]. Therefore, if you are on leave for eight months, your stock vesting will be paused during the entire leave period and will resume when you return to work.",
+      "refused": false,
+      "seconds": 8.12,
+      "prompt_tokens": 1247,
+      "correct": true,
+      "judge_reason": "The assistant answer accurately states the key fact that stock vesting is paused during continuous leave and resumes upon return, matching the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q13",
+      "question": "How much advance notice do I need to give for military leave?",
+      "answerable": true,
+      "retrieved": [
+        "Leave Types > Military Leave > How to Apply for Military Leave",
+        "Leave Types > Military Leave > Reinstatement",
+        "Leave Types > Military Leave > For leaves 31 days or less",
+        "Leave Types > Military Leave > For leaves greater than 31 days",
+        "Leave Types > Emergency Leave > How to Request"
+      ],
+      "rank": 1,
+      "answer": "Whenever possible, team members need to provide at least 30 days advance notice by selecting Military Leave under the Leaves dropdown in Workday. [S1]",
+      "refused": false,
+      "seconds": 6.24,
+      "prompt_tokens": 1025,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key information as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q14",
+      "question": "How long can I be on leave for active military duty longer than 31 days?",
+      "answerable": true,
+      "retrieved": [
+        "Leave Types > Military Leave > For leaves greater than 31 days",
+        "Leave Types > Military Leave > For leaves 31 days or less",
+        "Leave Types > Military Leave > Reinstatement",
+        "Leave Types > Military Leave > How to Apply for Military Leave",
+        "Leave Types > Sick Leave"
+      ],
+      "rank": 1,
+      "answer": "For leaves greater than 31 days, team members may be eligible for up to 6 months of unpaid leave. Eligibility for the full 6 months will be determined by the team member\u2019s statutory entitlement and the business needs. [S1]",
+      "refused": false,
+      "seconds": 5.42,
+      "prompt_tokens": 872,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact about the maximum leave period and mentions the factors determining eligibility, matching the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q15",
+      "question": "Someone on my team is going on parental leave for four months. How should I cover their work?",
+      "answerable": true,
+      "retrieved": [
+        "Leave of Absence Toolkit for Team Members and Managers > General Guidelines For Managers on Resource Allocation",
+        "Leave of Absence Toolkit for Team Members and Managers > Team Member Toolkit > Pre-Leave",
+        "Leave Types > GitLab Parental Leave > Eligibility, Entitlement and Planning Your Leave",
+        "Leave Types > GitLab Parental Leave > Returning to Work at 50% Capacity",
+        "Leave Types > GitLab Parental Leave > How to Initiate Your Leave"
+      ],
+      "rank": 1,
+      "answer": "For a leave of four months, you should use internal resources who may be eligible for an interim bonus, and consider hiring a temporary contractor [S1].",
+      "refused": false,
+      "seconds": 7.53,
+      "prompt_tokens": 1438,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key facts as the reference answer without any contradictions.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q16",
+      "question": "What is the daily limit for meals when I'm travelling for work?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > 4. PROCEDURES > Meals: Company Provided while Traveling",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Travel (Other) > Travel Dates - Days before and after",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Traveling: Team Events and Meals",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Meals with Clients and Partners",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Co-Working Space - Daily Office Pass"
+      ],
+      "rank": 1,
+      "answer": "The daily limit for meals while traveling on Company business is up to $120 USD (or local equivalent currency) per day. [S1]",
+      "refused": false,
+      "seconds": 5.36,
+      "prompt_tokens": 963,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same daily limit for meals as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q17",
+      "question": "How much can I spend per person when I take a customer out for dinner?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Meals with Clients and Partners",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Traveling: Team Events and Meals",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Meals: Company Provided while Traveling",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Team Member Significant Life Events and Team Member Gifts",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Hotels > Self Stay Incentive Policy"
+      ],
+      "rank": 1,
+      "answer": "You can spend up to $80 per person per meal when entertaining clients, as stated in [S1].",
+      "refused": false,
+      "seconds": 8.54,
+      "prompt_tokens": 1120,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q18",
+      "question": "How much do new hires get to set up their home office?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Equipment",
+        "Global Travel and Expense Policy > 6. Purchase Cards",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Equipment > New Hires- 1,500 USD (or equivalent local currency) Guidelines",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Office Supplies & consumables",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Team Member Significant Life Events and Team Member Gifts"
+      ],
+      "rank": 1,
+      "answer": "New hires receive a 1,500 USD (or equivalent local currency) stipend to help set up their home office in their first year. [S2]",
+      "refused": false,
+      "seconds": 5.4,
+      "prompt_tokens": 1109,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q19",
+      "question": "Can I expense a software subscription I use for work?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > Approved Office Supplies List > Software",
+        "Global Travel and Expense Policy > Approved Office Supplies List > VPN Subscription",
+        "Global Travel and Expense Policy > 3. General Guidelines",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Internet",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Books (Audio/E-Books included)"
+      ],
+      "rank": 1,
+      "answer": "No software subscriptions are reimbursable. Team Members that would like to purchase software will need to go through the Procurement process. [S1]",
+      "refused": false,
+      "seconds": 5.0,
+      "prompt_tokens": 925,
+      "correct": false,
+      "judge_reason": "The assistant answer contradicts the reference answer by stating that software subscriptions are not reimbursable, while the reference answer explicitly states they are not.",
+      "facts_ok": null,
+      "cited_gold": true
+    },
+    {
+      "id": "q20",
+      "question": "How far ahead should I book an international flight?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > Advance Purchase",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > International Flights",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > Domestic Flights",
+        "Visas > Expensing > Arranging a visa for travel > Tips & Tricks for visa arrangements > Timeline guide for visa applications",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > Common Out-of-policy Airfare Flags in Navan"
+      ],
+      "rank": 1,
+      "answer": "Travelers should ideally book international flights at least 21 days in advance to take advantage of discounted fares [S1].",
+      "refused": false,
+      "seconds": 10.51,
+      "prompt_tokens": 1059,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer regarding the number of days to book in advance.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q21",
+      "question": "Can I book business class for a 7-hour international flight?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > International Flights",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > Domestic Flights",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Car Rental",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > Advance Purchase",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > Common Out-of-policy Airfare Flags in Navan"
+      ],
+      "rank": 1,
+      "answer": "Based on the criteria provided, for international flights exceeding 8 hours of consecutive flight time, business class is permitted for frequent travelers (3 or more trips per quarter) when traveling for specific reasons such as meeting with customers, speaking engagements, or representing GitLab at a conference. Since this flight is 7 hours, it does not meet the 8-hour threshold. Therefore, you cannot book business class for a 7-hour international flight under the standard policy [S1].",
+      "refused": false,
+      "seconds": 8.93,
+      "prompt_tokens": 858,
+      "correct": false,
+      "judge_reason": "The assistant answer provides incorrect criteria and does not align with the given question and reference answer.",
+      "facts_ok": null,
+      "cited_gold": true
+    },
+    {
+      "id": "q22",
+      "question": "Can I still expense my ExpressVPN subscription?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > Approved Office Supplies List > VPN Subscription",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Internet",
+        "Global Travel and Expense Policy > 3. General Guidelines",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Hotels",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Internet"
+      ],
+      "rank": 1,
+      "answer": "No, starting July 15, 2026, GitLab no longer reimburses personal VPN subscriptions through expense claims. Team members should use NordLayer instead. [S1]",
+      "refused": false,
+      "seconds": 15.09,
+      "prompt_tokens": 1439,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key facts as the reference answer without any contradictions.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q23",
+      "question": "What's the monthly limit for a co-working space?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Co-Working Space - Monthly",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Co-Working Space - Daily Office Pass",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Co-Working Space - Monthly",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Internet",
+        "Global Travel and Expense Policy > 3. General Guidelines"
+      ],
+      "rank": 1,
+      "answer": "The monthly limit for co-working space is $700.00. [S1]",
+      "refused": false,
+      "seconds": 7.36,
+      "prompt_tokens": 1336,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q24",
+      "question": "I'm staying with my sister instead of a hotel on a business trip. Can I expense anything?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > 4. PROCEDURES > Hotels > Self Stay Incentive Policy",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Hotels > Booking accommodations through Airbnb",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Hotels",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Travel (Other) > Internal Conferences and Meetings",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Hotels"
+      ],
+      "rank": 1,
+      "answer": "Yes, you may expense up to a $50 appropriate host/hostess gift. [S1]",
+      "refused": false,
+      "seconds": 5.14,
+      "prompt_tokens": 966,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer regarding the expense limit for a host gift.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q25",
+      "question": "How much can I spend on work books in a year?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Books (Audio/E-Books included)",
+        "Global Travel and Expense Policy > 3. General Guidelines",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Office Supplies & consumables",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Equipment",
+        "Global Travel and Expense Policy > 3. General Guidelines"
+      ],
+      "rank": 1,
+      "answer": "According to the handbook, the limit for reimbursable books (including audio/e-books) is set to $60/year [S1].",
+      "refused": false,
+      "seconds": 6.76,
+      "prompt_tokens": 1251,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the correct limit of $60 per year for reimbursable books.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q26",
+      "question": "What's the deadline for submitting my expenses?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > Approved Office Supplies List > 4.5 Submitting Expenses on Behalf (or Requested By) Team Member's Manager",
+        "Global Travel and Expense Policy > Approved Office Supplies List > Legal entities",
+        "Global Travel and Expense Policy > 3. General Guidelines",
+        "Global Travel and Expense Policy > Approved Office Supplies List > Legal entities > PEO (Professional Employer Organization/ Employer of Record and not a GitLab entity or Branch)",
+        "Global Travel and Expense Policy > Approved Office Supplies List > Legal entities > PEO (Professional Employer Organization/ Employer of Record and not a GitLab entity or Branch)"
+      ],
+      "rank": 9,
+      "answer": "The deadline for submitting expenses varies based on the legal entity. For most entities, expenses must be submitted and approved by the Accounts Payable team by the 3rd of each month to be included in the current month's payroll. For specific entities like GitLab France S.A.S and GitLab BV Finland, the deadline is the 6th of each month. [S2] [S4] [S5]",
+      "refused": false,
+      "seconds": 11.22,
+      "prompt_tokens": 1522,
+      "correct": false,
+      "judge_reason": "The assistant answer provides incorrect deadlines and varies the information from the reference answer.",
+      "facts_ok": false,
+      "cited_gold": false
+    },
+    {
+      "id": "q27",
+      "question": "I lost the receipt for a business expense. What do I do?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > 3. General Guidelines",
+        "Global Travel and Expense Policy > Approved Office Supplies List > 4.3 Missing Receipt Affidavit",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Business Cards",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Meals: Company Provided while Traveling",
+        "Global Travel and Expense Policy > 3. General Guidelines"
+      ],
+      "rank": 2,
+      "answer": "You will need to complete a Missing Receipt Affidavit and attach it as a PDF to your expense claim. [S2]",
+      "refused": false,
+      "seconds": 10.97,
+      "prompt_tokens": 981,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key information as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q28",
+      "question": "When am I eligible for a new laptop?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Laptops, insurance and repairs",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Laptops, insurance and repairs > Repairs to company issued equipment",
+        "Relocation > How To Apply for a Long-Term Relocation > Country Specific Tasks > India > Relocating to or from India",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Equipment",
+        "Relocation > Relocation / Address Change > Long-Term Relocation > Eligibility to Work"
+      ],
+      "rank": 1,
+      "answer": "You are eligible for a new laptop if your Team Member laptop needs to be replaced due to damage and you have reached out to IT via an issue before purchasing a new one [S1]. Additionally, if you have been employed for three years, you can request a laptop refresh [S1].",
+      "refused": false,
+      "seconds": 7.86,
+      "prompt_tokens": 1079,
+      "correct": true,
+      "judge_reason": "The assistant answer accurately captures the key facts from the reference answer without contradiction.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q29",
+      "question": "Can I take my work laptop with me on holiday to Cuba?",
+      "answerable": true,
+      "retrieved": [
+        "Travel Safety and Security > Trade Compliance Considerations",
+        "Relocation > Relocation / Address Change > Short-Term Stay Definition > Considerations for Short-Term Travel",
+        "Time Off Types > Public Holiday > Frequently Asked Public Holiday Questions",
+        "Time Off Types > Public Holiday > Overview",
+        "Travel Safety and Security > Secure your data during travels"
+      ],
+      "rank": 1,
+      "answer": "No, you cannot take your work laptop with you to Cuba as it is a US-embargoed country. [S1]",
+      "refused": false,
+      "seconds": 6.94,
+      "prompt_tokens": 1379,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer without any contradictions.",
+      "facts_ok": null,
+      "cited_gold": true
+    },
+    {
+      "id": "q30",
+      "question": "What's the maximum emergency medical cover on the business travel insurance?",
+      "answerable": true,
+      "retrieved": [
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Business Travel Insurance Coverage > Key Coverage Details",
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Business Travel Insurance Coverage",
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Emergency Assistance Program with International SOS",
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Emergency Assistance Program with International SOS > When to Use International SOS",
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Business Travel Insurance Coverage > Using the Policy"
+      ],
+      "rank": 1,
+      "answer": "The maximum emergency medical cover on the business travel insurance is up to $250,000 per occurrence [S1].",
+      "refused": false,
+      "seconds": 7.21,
+      "prompt_tokens": 614,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q31",
+      "question": "Who do I contact if I have a medical emergency on a business trip abroad?",
+      "answerable": true,
+      "retrieved": [
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Business Travel Insurance Coverage > Using the Policy",
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Emergency Assistance Program with International SOS > When to Use International SOS",
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Quick Emergency Contacts",
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Emergency Assistance Program with International SOS",
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Business Travel Insurance Coverage"
+      ],
+      "rank": 1,
+      "answer": "Contact International SOS immediately using the app, phone, or email for medical assistance during travel. [S1] [S2] [S3]",
+      "refused": false,
+      "seconds": 3.78,
+      "prompt_tokens": 501,
+      "correct": false,
+      "judge_reason": "The assistant answer lacks specific contact information and does not provide the exact details given in the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q32",
+      "question": "Can I pay a small fee to a customs officer to speed up a routine clearance?",
+      "answerable": true,
+      "retrieved": [
+        "Anti-Corruption Policy > FACILITATING PAYMENTS",
+        "Global Travel and Expense Policy > Approved Office Supplies List > Postage/Shipping/Customs Fees",
+        "Travel Safety and Security > Secure your data during travels",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland > Fee",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Marketing- related expenses"
+      ],
+      "rank": 1,
+      "answer": "I don't know based on the handbook.",
+      "refused": true,
+      "seconds": 3.78,
+      "prompt_tokens": 812,
+      "correct": false,
+      "facts_ok": false,
+      "cited_gold": false
+    },
+    {
+      "id": "q33",
+      "question": "Can I make a donation to a charity on the company's behalf?",
+      "answerable": true,
+      "retrieved": [
+        "Anti-Corruption Policy > CHARITABLE CONTRIBUTIONS",
+        "Anti-Corruption Policy > POLITICAL CONTRIBUTIONS",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Team Member Significant Life Events and Team Member Gifts",
+        "Anti-Corruption Policy > GIFTS, ENTERTAINMENT, TRAVEL & PROMOTIONAL EXPENDITURES",
+        "Spending Company Money > Guidelines"
+      ],
+      "rank": 1,
+      "answer": "Yes, but you must obtain prior written approval from the Chief Legal Officer before making any charitable donation on behalf of the Company or using Company funds, directly or indirectly. [S1]",
+      "refused": false,
+      "seconds": 6.24,
+      "prompt_tokens": 1286,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer about needing prior written approval from the Chief Legal Officer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q34",
+      "question": "Can I expense lunch with a government official who is evaluating our product?",
+      "answerable": true,
+      "retrieved": [
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Meals with Clients and Partners",
+        "Anti-Corruption Policy > GIFTS, ENTERTAINMENT, TRAVEL & PROMOTIONAL EXPENDITURES",
+        "Anti-Corruption Policy > GIFTS, ENTERTAINMENT, TRAVEL & PROMOTIONAL EXPENDITURES",
+        "Anti-Corruption Policy > IMPORTANT CONCEPTS",
+        "Anti-Corruption Policy > PROHIBITED CONDUCT"
+      ],
+      "rank": 1,
+      "answer": "Based on the handbook, you cannot provide anything of value, including meals, to any government official, government Team Member, or government representative, including any government prospects and government customers [S1]. Therefore, you cannot expense lunch with a government official who is evaluating your product. [S1]",
+      "refused": false,
+      "seconds": 7.66,
+      "prompt_tokens": 1373,
+      "correct": true,
+      "judge_reason": "The assistant answer accurately reflects the key fact from the reference answer and does not contradict it.",
+      "facts_ok": null,
+      "cited_gold": true
+    },
+    {
+      "id": "q35",
+      "question": "Should I use the whistleblower channel for a complaint about my own employment contract?",
+      "answerable": true,
+      "retrieved": [
+        "Whistleblowing at GitLab > Whistleblowing at GitLab > Country-specific Whistleblower Policies",
+        "Whistleblowing at GitLab > Whistleblowing at GitLab",
+        "Anti-Harassment Policy > Country & US State-Specific Requirements > GitLab LTD (The UK)",
+        "Anti-Corruption Policy > REPORTING BREACHES OF THIS ANTI-CORRUPTION POLICY",
+        "Anti-Harassment Policy > Country & US State-Specific Requirements > GitLab Ireland Ltd"
+      ],
+      "rank": 1,
+      "answer": "No, GitLab's whistleblower reporting channels and policies should not be used for complaints relating to a team member's own personal circumstances, or arising out of their employment contract. In those cases, you should use the applicable grievance procedure in the Anti-harassment Policy, or contact Team Member Relations as appropriate. [S1]",
+      "refused": false,
+      "seconds": 7.74,
+      "prompt_tokens": 1425,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key information as the reference answer, directing the user to use the grievance procedure in the Anti-harassment Policy or contact Team Member Relations for complaints about their own employment contract.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q36",
+      "question": "What does a litigation hold mean for the records I keep?",
+      "answerable": true,
+      "retrieved": [
+        "Record Retention Policy > 7. Litigation Holds",
+        "Record Retention Policy > 9. Communications > Team Member Personnel File Retention Policy",
+        "Record Retention Policy > 6. GitLab Records Retention Schedule",
+        "Record Retention Policy > 1. Records Management",
+        "Record Retention Policy > 2. The Difference between a \"Record\" and \"Non-Record\""
+      ],
+      "rank": 1,
+      "answer": "A litigation hold means that certain records and documents must be preserved. This suspension of the normal operation of the Records Retention Policy is issued by GitLab's Legal Department where appropriate. Failure to preserve these records could subject GitLab to fines or sanctions. [S1, S2, S5]",
+      "refused": false,
+      "seconds": 10.99,
+      "prompt_tokens": 1247,
+      "correct": true,
+      "judge_reason": "The assistant answer accurately describes the meaning of a litigation hold and includes the key fact about suspending the normal retention policy, without contradicting the reference answer.",
+      "facts_ok": true,
+      "cited_gold": false
+    },
+    {
+      "id": "q37",
+      "question": "Is two-factor authentication mandatory, and what happens if I don't set it up?",
+      "answerable": true,
+      "retrieved": [
+        "GitLab Password Guidelines > 1Password > Two factor authentication and time-based one time passwords",
+        "GitLab Password Guidelines > 1Password > Two factor authentication and time-based one time passwords",
+        "GitLab Password Guidelines > 1Password > 1Password guidelines",
+        "Travel Safety and Security > Secure your data during travels",
+        "Relocation > How To Apply for a Long-Term Relocation > Approvals Phase > Relocation Within Same Country and Same Location Factor"
+      ],
+      "rank": 1,
+      "answer": "Yes, two-factor authentication (2FA) is mandatory for all GitLab team members. If you do not set it up, your account will be blocked/suspended once it becomes stale for over 30 days [S1].",
+      "refused": false,
+      "seconds": 8.64,
+      "prompt_tokens": 1539,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key facts as the reference answer without any contradictions.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q38",
+      "question": "What should I do with 1Password before travelling abroad with my laptop?",
+      "answerable": true,
+      "retrieved": [
+        "GitLab Password Guidelines > 1Password > Traveling with 1Password",
+        "GitLab Password Guidelines > 1Password > 1Password guidelines",
+        "Travel Safety and Security > Secure your data during travels",
+        "Travel Safety and Security > Secure your data during travels",
+        "GitLab Password Guidelines > 1Password > Several accounts and unlocking the app"
+      ],
+      "rank": 1,
+      "answer": "Before traveling abroad with your laptop, you should enable Travel Mode in 1Password. This will remove copies of any GitLab shared vaults from your mobile devices, ensuring they are not accessible during your trip. [S1]",
+      "refused": false,
+      "seconds": 9.91,
+      "prompt_tokens": 1271,
+      "correct": false,
+      "judge_reason": "The assistant answer is incorrect because it mentions GitLab shared vaults, which is not relevant to the reference answer and the question asked.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q39",
+      "question": "How long is the probation period for new hires?",
+      "answerable": true,
+      "retrieved": [
+        "Contracts, Background Screenings, Probation Periods & PIAA > Probation Period",
+        "Contracts, Background Screenings, Probation Periods & PIAA > Probation Period > Important steps during the Probation Period",
+        "Contracts, Background Screenings, Probation Periods & PIAA > Contract Renewals",
+        "Contracts, Background Screenings, Probation Periods & PIAA > Annual Code of Business Conduct & Ethics Administration Process",
+        "Contracts, Background Screenings, Probation Periods & PIAA > Netherlands Renewal Process"
+      ],
+      "rank": 1,
+      "answer": "The probationary period for new hires at GitLab is between 1 and 9 months, depending on the location. [S1]",
+      "refused": false,
+      "seconds": 8.38,
+      "prompt_tokens": 1385,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact about the probationary period duration and location as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q40",
+      "question": "I want to start a paid side project. What do I need to do first?",
+      "answerable": true,
+      "retrieved": [
+        "Contracts, Background Screenings, Probation Periods & PIAA > PIAA (Proprietary Information and Assignment Agreement) > Approval for Outside Activities",
+        "Relocation > How To Apply for a Long-Term Relocation > Contract Phase > Relocation to a New Country > Tasks for People Operations",
+        "Contracts, Background Screenings, Probation Periods & PIAA > PIAA (Proprietary Information and Assignment Agreement) > Outside Employment (Paid or Unpaid), Projects, and Potentially-Conflicting Activities",
+        "Contracts, Background Screenings, Probation Periods & PIAA > PIAA (Proprietary Information and Assignment Agreement) > Approval for Outside Activities > Steps as a current candidate (actively engaged in the hiring process)",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Equipment"
+      ],
+      "rank": 1,
+      "answer": "Before beginning your paid side project, you must disclose the activity in writing to your Manager, and further escalate as needed. [S1]",
+      "refused": false,
+      "seconds": 7.49,
+      "prompt_tokens": 1537,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key facts as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q41",
+      "question": "I'm planning to move to another country. How early should I start the relocation process?",
+      "answerable": true,
+      "retrieved": [
+        "Relocation > How To Apply for a Long-Term Relocation > Team Member",
+        "Relocation > How To Apply for a Long-Term Relocation > Country Specific Tasks > The United States of America > Relocating To The United States",
+        "Relocation > How To Apply for a Long-Term Relocation > Country Specific Tasks > South Korea, France or Singapore > Relocating from France",
+        "Relocation > How To Apply for a Long-Term Relocation > Approvals Phase > Relocations To New Country or Different Location Factor",
+        "Relocation > How To Apply for a Long-Term Relocation > Contract Phase > Relocation to a New Country > Tasks for Team Members - Relocation Approved"
+      ],
+      "rank": 1,
+      "answer": "You should start the process no later than 3 months prior to your ideal relocation date if you are moving to a different country [S1].",
+      "refused": false,
+      "seconds": 12.29,
+      "prompt_tokens": 1198,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer regarding the timing of starting the relocation process.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q42",
+      "question": "How long can I stay in one place before it counts as a long-term relocation?",
+      "answerable": true,
+      "retrieved": [
+        "Relocation > Relocation / Address Change > Long-Term Relocation > Long-Term Relocation Definition",
+        "Relocation > Relocation / Address Change > Short-Term Stay Definition",
+        "Relocation > Relocation / Address Change > Digital Nomads",
+        "Relocation > How To Apply for a Long-Term Relocation > Country Specific Tasks > The United States of America > Relocating To The United States",
+        "Relocation > Relocation / Address Change > Short-Term Stay Definition"
+      ],
+      "rank": 1,
+      "answer": "According to the handbook, if you are staying in one location for more than six months in a single calendar year, that counts as a long-term relocation [S1, S5].",
+      "refused": false,
+      "seconds": 5.66,
+      "prompt_tokens": 1064,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key fact as the reference answer regarding the duration of stay for long-term relocation.",
+      "facts_ok": true,
+      "cited_gold": false
+    },
+    {
+      "id": "q43",
+      "question": "Will the company sponsor my H-1B visa?",
+      "answerable": true,
+      "retrieved": [
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Other visas GitLab may be able to accept > USA H-4 EAD",
+        "Visas > Visa and Sponsorship Policy > Visas and work permits GitLab does not sponsor",
+        "Visas > Visa and Sponsorship Policy",
+        "Visas > Visa and Sponsorship Policy > General Work Authorization Guidelines",
+        "Visas > How to talk to candidates about work authorization"
+      ],
+      "rank": 3,
+      "answer": "Based on the handbook, GitLab will not sponsor any visa that requires sponsorship. [S4] Therefore, GitLab will not sponsor your H-1B visa.",
+      "refused": false,
+      "seconds": 8.57,
+      "prompt_tokens": 1115,
+      "correct": true,
+      "judge_reason": "The assistant answer accurately reflects the key fact that GitLab does not sponsor H-1B visas, as stated in the reference answer.",
+      "facts_ok": null,
+      "cited_gold": true
+    },
+    {
+      "id": "q44",
+      "question": "What does an Irish Critical Skills Employment Permit cost, and who pays for it?",
+      "answerable": true,
+      "retrieved": [
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland > Fee",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland > The eligibility criteria",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland > Further criteria include",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland > Application process"
+      ],
+      "rank": 1,
+      "answer": "The processing fee for a Critical Skills Employment Permit is \u20ac1,000, which must be paid by the applicant. GitLab does not cover the costs of an application. [S1]",
+      "refused": false,
+      "seconds": 6.09,
+      "prompt_tokens": 1048,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the correct processing fee and accurately states that the applicant pays it, without contradicting the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q45",
+      "question": "What disciplinary action follows a first-time instance of inappropriate behaviour?",
+      "answerable": true,
+      "retrieved": [
+        "Anti-Harassment Policy > Classification of disciplinary action > Level 1",
+        "Anti-Harassment Policy > Classification of disciplinary action > Level 3",
+        "Anti-Harassment Policy > Classification of disciplinary action > Level 2",
+        "Anti-Harassment Policy > Classification of disciplinary action",
+        "Anti-Harassment Policy > Classification of disciplinary action > Level 4"
+      ],
+      "rank": 1,
+      "answer": "A first-time instance of inappropriate behavior results in a suspension (either paid or unpaid based on the country), and a formal apology towards the affected parties [S1].",
+      "refused": false,
+      "seconds": 4.13,
+      "prompt_tokens": 422,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key facts as the reference answer.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "q46",
+      "question": "Who should I contact if I think I'm being retaliated against for reporting harassment?",
+      "answerable": true,
+      "retrieved": [
+        "Anti-Harassment Policy > Types of Harassment > Retaliation",
+        "Anti-Harassment Policy > Types of Harassment > Discrimination",
+        "Anti-Harassment Policy > Reporting Alleged Harassment",
+        "Anti-Harassment Policy > Reporting a Physical Threat",
+        "Anti-Harassment Policy > Country & US State-Specific Requirements > Maine Law Requirements"
+      ],
+      "rank": 1,
+      "answer": "If you believe you have been retaliated against, please contact the Chief People Officer, Team Member Relations, or a People Business Partner to initiate an investigation [S1].",
+      "refused": false,
+      "seconds": 8.74,
+      "prompt_tokens": 933,
+      "correct": true,
+      "judge_reason": "The assistant answer provides the same key facts as the reference answer and does not contradict it.",
+      "facts_ok": true,
+      "cited_gold": true
+    },
+    {
+      "id": "u01",
+      "question": "What is the company's 401(k) match?",
+      "answerable": false,
+      "retrieved": [
+        "Anti-Harassment Policy > Country & US State-Specific Requirements > Rhode Island Law Requirements",
+        "Spending Company Money > Guidelines",
+        "Anti-Corruption Policy > POLITICAL CONTRIBUTIONS",
+        "Anti-Corruption Policy > PURPOSE",
+        "Anti-Harassment Policy > Country & US State-Specific Requirements > GitLab Ireland Ltd"
+      ],
+      "answer": "I don't know based on the handbook.",
+      "refused": true,
+      "seconds": 5.71,
+      "prompt_tokens": 1150
+    },
+    {
+      "id": "u02",
+      "question": "What's the dress code for customer meetings?",
+      "answerable": false,
+      "retrieved": [
+        "Global Travel and Expense Policy > 3. General Guidelines > 3.2 Trip Purpose Guidance",
+        "Anti-Harassment Policy > Introduction",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Travel (Other) > Internal Conferences and Meetings",
+        "Anti-Harassment Policy > Types of Harassment > Bullying / Workplace Violence",
+        "Contracts, Background Screenings, Probation Periods & PIAA > Job Change Letter > Background Screenings"
+      ],
+      "answer": "I don't know based on the handbook.",
+      "refused": true,
+      "seconds": 5.24,
+      "prompt_tokens": 775
+    },
+    {
+      "id": "u03",
+      "question": "How much is the bonus for referring a candidate who gets hired?",
+      "answerable": false,
+      "retrieved": [
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland > Fee",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland > The eligibility criteria",
+        "Contracts, Background Screenings, Probation Periods & PIAA > PIAA (Proprietary Information and Assignment Agreement) > Approval for Outside Activities > Steps as a current candidate (actively engaged in the hiring process)",
+        "Visas > How to talk to candidates about work authorization",
+        "Leave of Absence Toolkit for Team Members and Managers > General Guidelines For Managers on Resource Allocation"
+      ],
+      "answer": "I don't know based on the handbook.",
+      "refused": true,
+      "seconds": 5.26,
+      "prompt_tokens": 1157
+    },
+    {
+      "id": "u04",
+      "question": "After how many years do I become eligible for a sabbatical?",
+      "answerable": false,
+      "retrieved": [
+        "Leave Types > Military Leave > Reinstatement",
+        "Leave Types > Military Leave > For leaves greater than 31 days",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Other visas GitLab may be able to accept > Japan Engineer Visa",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Other visas GitLab may be able to accept > Singapore Personalised Employment Pass",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Other visas GitLab may be able to accept > Australia Employer Nomination Scheme visa (subclass 186)"
+      ],
+      "answer": "I don't know based on the handbook.",
+      "refused": true,
+      "seconds": 6.74,
+      "prompt_tokens": 1159
+    },
+    {
+      "id": "u05",
+      "question": "What is the overtime pay rate for hourly team members?",
+      "answerable": false,
+      "retrieved": [
+        "Time Off Types > GitLab Legal Civic Obligations Policy > Eligibility & Entitlement",
+        "Time Off Types > GitLab Legal Civic Obligations Policy > Pay while on Jury Duty",
+        "Time Off Types > Sick Time > Pay While on Sick Leave of Absence",
+        "Time Off Types > Bereavement > Pay and Benefits",
+        "Global Travel and Expense Policy > 4. PROCEDURES > Traveling: Team Events and Meals"
+      ],
+      "answer": "I don't know based on the handbook.",
+      "refused": true,
+      "seconds": 9.11,
+      "prompt_tokens": 870
+    },
+    {
+      "id": "u06",
+      "question": "How much is my annual Growth and Development budget?",
+      "answerable": false,
+      "retrieved": [
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Conferences",
+        "Global Travel and Expense Policy > Approved Office Supplies List > Training/Tuition",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland > The eligibility criteria",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Books (Audio/E-Books included)",
+        "Global Travel and Expense Policy > Approved Office Supplies List > Professional dues, membership fees"
+      ],
+      "answer": "I don't know based on the handbook.",
+      "refused": true,
+      "seconds": 25.36,
+      "prompt_tokens": 880
+    },
+    {
+      "id": "u07",
+      "question": "When is the annual salary review?",
+      "answerable": false,
+      "retrieved": [
+        "Contracts, Background Screenings, Probation Periods & PIAA > Annual Code of Business Conduct & Ethics Administration Process",
+        "Visas > Highly Skilled Candidates (Ireland and EU Blue Card processes) > Critical Skills Employment Permit Ireland > Application process",
+        "Travel Safety and Security > Business Travel Emergency Support and Insurance > Business Travel Insurance Coverage > Key Coverage Details",
+        "Visas > Dutch Work Permits > 30% Ruling in the Netherlands",
+        "Global Travel and Expense Policy > Approved Office Supplies List > 4.5 Submitting Expenses on Behalf (or Requested By) Team Member's Manager"
+      ],
+      "answer": "I don't know based on the handbook.",
+      "refused": true,
+      "seconds": 7.14,
+      "prompt_tokens": 981
+    },
+    {
+      "id": "u08",
+      "question": "Which laptop model do engineers get?",
+      "answerable": false,
+      "retrieved": [
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Laptops, insurance and repairs",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Laptops, insurance and repairs > Repairs to company issued equipment",
+        "Global Travel and Expense Policy > 4. PROCEDURES > 4.1 NON-TRAVEL RELATED EXPENSES > Equipment",
+        "Global Travel and Expense Policy > Approved WFH Equipment List > Computer Equipment/Other",
+        "Contracts, Background Screenings, Probation Periods & PIAA > Job Change Letter > Background Screenings > Contractors, Contingent Workers, & Temporary Service Providers"
+      ],
+      "answer": "I don't know based on the handbook.",
+      "refused": true,
+      "seconds": 5.52,
+      "prompt_tokens": 1019
+    }
+  ]
+}

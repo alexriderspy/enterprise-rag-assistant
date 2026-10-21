@@ -1,0 +1,13 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python -m rag.answer What is the company's 401(k) match?
+W1021 08:17:43.809000 1139 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Q: What is the company's 401(k) match?
+
+I don't know based on the handbook.
+
+  [S1] Anti-Harassment Policy > Country & US State-Specific Requirements > Rh
+  [S2] Spending Company Money > Guidelines
+  [S3] Anti-Corruption Policy > POLITICAL CONTRIBUTIONS
+  [S4] Anti-Corruption Policy > PURPOSE
+  [S5] Anti-Harassment Policy > Country & US State-Specific Requirements > Gi
+
+0.6s, 1150 prompt tokens

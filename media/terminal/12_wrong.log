@@ -1,0 +1,29 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python -m evals.report --wrong 5_prompt_v2
+q07  My grandmother is ill and I need to look after her. Is there paid leave for that?
+     answer: Based on the handbook, GitLab does not provide paid caregiver sick time. You may consider using Flexible Paid 
+     judge:  The assistant answer does not provide the key fact about caregiver sick time being available with a speci
+
+q19  Can I expense a software subscription I use for work?
+     answer: No software subscriptions are reimbursable. Team Members that would like to purchase software will need to go 
+     judge:  The assistant answer contradicts the reference answer by stating that software subscriptions are not reim
+
+q21  Can I book business class for a 7-hour international flight?
+     answer: Based on the criteria provided, for international flights exceeding 8 hours of consecutive flight time, busine
+     judge:  The assistant answer provides incorrect criteria and does not align with the given question and reference
+
+q26  What's the deadline for submitting my expenses?
+     answer: The deadline for submitting expenses varies based on the legal entity. For most entities, expenses must be sub
+     judge:  The assistant answer provides incorrect deadlines and varies the information from the reference answer.
+
+q31  Who do I contact if I have a medical emergency on a business trip abroad?
+     answer: Contact International SOS immediately using the app, phone, or email for medical assistance during travel. [S1
+     judge:  The assistant answer lacks specific contact information and does not provide the exact details given in t
+
+q32  Can I pay a small fee to a customs officer to speed up a routine clearance?
+     answer: I don't know based on the handbook.
+     judge:  refused, so no judge call
+
+q38  What should I do with 1Password before travelling abroad with my laptop?
+     answer: Before traveling abroad with your laptop, you should enable Travel Mode in 1Password. This will remove copies 
+     judge:  The assistant answer is incorrect because it mentions GitLab shared vaults, which is not relevant to the 
+

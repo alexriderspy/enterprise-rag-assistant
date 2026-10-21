@@ -1,0 +1,16 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python data/fetch_handbook.py
+time-off-types                 4510 words
+leave-types                    2790 words
+parental-leave-toolkit         1212 words
+contracts-probation-periods    5275 words
+relocation                     6768 words
+visas                          6758 words
+anti-harassment                5660 words
+expenses                      10378 words
+spending-company-money          512 words
+travel                         1170 words
+anti-corruption-policy         3059 words
+whistleblowing                  548 words
+record-retention-policy        3045 words
+password-guidelines            3695 words
+14 pages, 55,380 words

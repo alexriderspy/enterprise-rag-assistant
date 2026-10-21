@@ -1,0 +1,17 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python -m rag.retrieve Can I expense lunch with a government official who is evaluating our product?
+W1021 07:46:38.783000 90103 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+
+dense:
+  1. Global Travel and Expense Policy > Approved Office Supplies List > 4.5 Submitting Expenses on Behalf
+  2. Global Travel and Expense Policy > Approved WFH Equipment List > Meals with Clients and Partners
+  3. Spending Company Money > Guidelines
+
+hybrid:
+  1. Global Travel and Expense Policy > Approved WFH Equipment List > Meals with Clients and Partners
+  2. Anti-Corruption Policy > GIFTS, ENTERTAINMENT, TRAVEL & PROMOTIONAL EXPENDITURES
+  3. Global Travel and Expense Policy > Approved Office Supplies List > 4.5 Submitting Expenses on Behalf
+
+rerank:
+  1. Global Travel and Expense Policy > Approved WFH Equipment List > Meals with Clients and Partners
+  2. Anti-Corruption Policy > GIFTS, ENTERTAINMENT, TRAVEL & PROMOTIONAL EXPENDITURES
+  3. Anti-Corruption Policy > GIFTS, ENTERTAINMENT, TRAVEL & PROMOTIONAL EXPENDITURES

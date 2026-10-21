@@ -1,0 +1,11 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python -m rag.parse
+380 sections, 345 with text
+time-off-types#flexible-paid-time-off-pto                Flexible Paid Time Off (PTO)                 403 chars
+time-off-types#overview                                  Flexible Paid Time Off (PTO) > Overview     1122 chars
+time-off-types#pto-protocols-planning-and-coordination   Flexible Paid Time Off (PTO) > PTO Protoco   706 chars
+time-off-types#how-to-enter-pto-in-workday               Flexible Paid Time Off (PTO) > How to Ente   624 chars
+time-off-types#how-to-prepare-for-pto                    Flexible Paid Time Off (PTO) > How to Prep   184 chars
+time-off-types#global-statutory-requirements             Flexible Paid Time Off (PTO) > Global Stat   494 chars
+time-off-types#overview-1                                Public Holiday > Overview                   1449 chars
+time-off-types#general-list-of-public-holidays           Public Holiday > General List of Public Ho   288 chars
+time-off-types#how-to-enter-public-holidays-in-workday   Public Holiday > How to Enter Public Holid   409 chars

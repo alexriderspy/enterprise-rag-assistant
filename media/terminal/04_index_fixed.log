@@ -1,0 +1,4 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python -m rag.index --chunking fixed
+W1021 00:50:01.984000 37737 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+embedded 345 chunks in 3.9s, vectors of size 384
+collection handbook_fixed: 345 chunks saved to index/chroma

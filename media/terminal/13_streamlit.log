@@ -1,0 +1,12 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python -m streamlit run app/app.py
+2026-10-21 07:04:50.950 Uvicorn server started on localhost:51529
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://localhost:51529
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            

@@ -1,0 +1,14 @@
+sreemanti@MacBook-Pro enterprise-rag-assistant % python -m evals.report
+metric                      1_baseline      4_rerank   5_prompt_v2
+hit@1                             0.59          0.85          0.85
+hit@5                             0.91          0.98          0.98
+mrr@10                            0.72          0.90          0.90
+answer_correct                    0.89          0.96          0.85
+facts_exact                       0.89          0.97          0.95
+citation_correct                  0.72          0.93          0.93
+idk_when_unanswerable             0.00          0.00          1.00
+idk_when_answerable               0.00          0.00          0.02
+overall_accuracy                  0.76          0.81          0.87
+avg_seconds                      11.38          9.49          7.78
+
+54 questions per config
